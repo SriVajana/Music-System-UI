@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="music.css">
+</head>
+<body>
+  <div class="player">
+    <div class="album">
+      <img alt="Album art" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='500' height='500'><defs><linearGradient id='g' x1='0' x2='1'><stop offset='0' stop-color='%23ff416c'/><stop offset='1' stop-color='%23ff4b2b'/></linearGradient></defs><rect width='100%25' height='100%25' fill='url(%23g)' rx='20'/><text x='50%25' y='50%25' font-size='48' fill='rgba(255,255,255,0.95)' font-family='Segoe UI, sans-serif' dominant-baseline='middle' text-anchor='middle'>Album</text></svg>">
+    </div>
+    <div class="song-info">
+      <h3>Dream Vibes</h3>
+      <p>Beats</p>
+    </div>
+
+    <div class="progress-row">
+      <span class="time current">0:00</span>
+      <div class="progress-container">
+        <div class="progress"></div>
+      </div>
+      <span class="time total">3:00</span>
+    </div>
+
+    <div class="controls">
+      <div class="btn prev"><span class="icon">⏮</span></div>
+      <div class="btn play" title="Play/Pause"><span class="icon">▶</span></div>
+      <div class="btn next"><span class="icon">⏭</span></div>
+    </div>
+
+    <div class="volume">
+      <label for="volumeRange">Volume</label>
+      <div class="volume-bar">
+        <div class="volume-level"></div>
+      </div>
+      <input id="volumeRange" type="range" min="0" max="1" step="0.01" value="0.5">
+    </div>
+  </div>
+
+  <script src="music.js"></script>
+</body>
+</html>
